@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- font awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind CSS CDN link -->
+    <link href="
+    https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+    " rel="stylesheet">
+</head>
+
+<body>
+    <!-- offer section -->
+    <div id="offer" class="flex justify-center p-2 bg-blue-900 text-white items-center">
+        <p>Sign up and
+        <h1 class="font-bold">GET 20% OFF</h1> for your first order</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer ml-5 h-5 w-5" fill="none" id="cencel"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </div>
+
+    <!-- Responisive Navbar -->
+    <nav class="bg-white p-4 flex justify-between sticky top-0 z-10">
+        <h1 class="text-2xl font-bold items-center">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" class=" md:hidden h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+
+        <ul class=" hidden md:flex gap-7 text-gray-500 items-center font-semibold">
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="#">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Contact US</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Side Navbar -->
+    <section id="sidenav" class="md:hidden transition-all duration-1000 bg-gray-800 p-5 fixed z-20 top-0"
+        style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-3 text-white">
+            <p id="closenav" class="cursor-pointer">X</p>
+        </div>
+        <ul class="flex gap-10 items-center flex-col text-white">
+            <li class="hover:underline"><a href="index.html">Home</a></li>
+            <li class="hover:underline"><a href="">New Arrival</a></li>
+            <li class="hover:underline"><a href="">Most Wanted</a></li>
+            <li class="hover:underline"><a href="">Collectons</a></li>
+            <li class="hover:underline"><a href="">Contact Us</a></li>
+        </ul>
+    </section>
+    <div class="md:relative max-w-full overflow-hidden ml-3 hidden" style="width: 98%;">
+        <div id="slider" class="flex transition-transform duration-500 ease-in-out mt-3 rounded-sm">
+            <div class="w-full flex-shrink-0">
+                <img src="./images/rapper-yas-on-mens-fashion-94k6vekt7jd03wrb.jpg" alt=""
+                    class=" bg-black bg-opacity-50 w-full rounded" style="height: 400px;">
+            </div>
+            <div class="w-full flex-shrink-0">
+                <img src="./images/whatever-g01t8m79g2ig5us7.jpg" alt="" class=" bg-black bg-opacity-50 w-full rounded"
+                    style="height: 400px;">
+            </div>
+            <div class="w-full flex-shrink-0">
+                <img src="./images/rapper-yas-on-mens-fashion-94k6vekt7jd03wrb.jpg" alt=""
+                    class=" bg-black bg-opacity-50 w-full rounded" style="height: 400px;">
+            </div>
+        </div>
+        <!-- text -->
+        <div class="absolute top-1/3 left-60 text-center">
+            <h1 class="md:text-6xl font-bold text-center text-white text-2xl">Level up your style with our</h1>
+            <h4 class="text-center text-white mt-3 font-bold">Summer Collections</h4>
+            <button class="bg-white text-black px-5 py-2 rounded mt-3 hover:bg-black hover:text-white">Shop now</button>
+        </div>
+        <!-- navication button -->
+        <button id="prev"
+            class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full md:text-5xl text-2xl font-bold">
+            < </button>
+                <button id="next"
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full md:text-5xl text-2xl font-bold">
+                    >
+                </button>
+    </div>
+
+    <!-- Collections -->
+    <section class="flex justify-between">
+        <!-- Checklist -->
+        <div class="flex flex-col m-5" style="border-right: 3px solid black; width: 25%;">
+            <!-- Ossasition -->
+            <div>
+                <h1 class="md:text-3xl text-lg font-bold">Occasion</h1>
+                <div class="flex flex-col mt-3 gap-2">
+                    <div class="flex items-center">
+                        <input class="mr-3" type="checkbox" name="check" value="Summer">
+                        <h1 class="md:text-2xl text-sm">Summer</h1>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="mr-3" type="checkbox" name="check" value="Party">
+                        <h1 class="md:text-2xl text-sm">Party</h1>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="mr-3" type="checkbox" name="check" value="Beach">
+                        <h1 class="md:text-2xl text-sm">Beach</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Colors -->
+            <div class="mt-10">
+                <h1 class="md:text-3xl text-lg font-bold">Colors</h1>
+                <div class="flex flex-col mt-3 gap-2">
+                    <div class="flex items-center">
+                        <input class="mr-3" type="checkbox" name="check" value="Red">
+                        <h1 class="md:text-2xl text-sm">Red</h1>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="mr-3" type="checkbox" name="check" value="Blue">
+                        <h1 class="md:text-2xl text-sm">Blue</h1>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="mr-3" type="checkbox" name="check" value="White">
+                        <h1 class="md:text-2xl text-sm">White</h1>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="mr-3" type="checkbox" name="check" value="Green">
+                        <h1 class="md:text-2xl text-sm">Green</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Arrivals -->
+            <div class="mt-10">
+                <h1 class="md:text-3xl text-lg font-bold">Arrivals</h1>
+                <div class="flex flex-col mt-3 gap-2">
+                    <div class="flex items-center">
+                        <input class="mr-3" type="checkbox" name="check" value="New">
+                        <h1 class="md:text-2xl text-sm">New</h1>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="mr-3" type="checkbox" name="check" value="Old">
+                        <h1 class="md:text-2xl text-sm">Old</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Products -->
+        <div class="text-center" style="width: 75%;">
+            <!-- searchbar -->
+            <form action=""
+                class="flex items-center justify-between md:p-3 p-1 border border-black mt-3 outline-none rounded-3xl"
+                style="width: 95%;">
+                <input id="search" class="outline-none w-full" type="search" placeholder="search">
+                <i class="fa-solid fa-magnifying-glass" style="color: #040e20;"></i>
+            </form>
+            <!-- Dresses -->
+            <div id="product-container" class="grid justify-between gap-5 grid-cols-2 md:grid-cols-4 mt-5">
+                <div id="result-Ossasition">
+                    <img src="./images/c-1.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Twilight Glam</h2>
+                    <p>$29</p>
+                </div>
+                <div id="result-Ossasition">
+                    <img src="./images/c-2.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Sunkissed Dreams</h2>
+                    <p>$79</p>
+                </div>
+                <div id="result-Ossasition">
+                    <img src="./images/c-3.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Glamour Nights</h2>
+                    <p>$999</p>
+                </div>
+                <div id="result-color">
+                    <img src="./images/c-4.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Boho Chic Vibes</h2>
+                    <p>$99</p>
+                </div>
+                <div id="result-color">
+                    <img src="./images/c-5.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Tropical Escape</h2>
+                    <p>$59</p>
+                </div>
+                <div id="result-color">
+                    <img src="./images/c-6.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Romantic Affair</h2>
+                    <p>$69</p>
+                </div>
+                <div id="result-color">
+                    <img src="./images/c-7.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Enchanted Garden</h2>
+                    <p>$89</p>
+                </div>
+                <div id="result-arrivals">
+                    <img src="./images/c-8.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Effortless Elegance</h2>
+                    <p>$79</p>
+                </div>
+                <div id="result-arrivals">
+                    <img src="./images/c-9.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Golden Hour Glam
+                    </h2>
+                    <p>$99</p>
+                </div>
+                <div id="result-arrivals">
+                    <img src="./images/c-10.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Funky Fresh</h2>
+                    <p>$49</p>
+                </div>
+                <div id="result-arrivals">
+                    <img src="./images/c-11.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Summer Solstice</h2>
+                    <p>109</p>
+                </div>
+                <div id="result-color">
+                    <img src="./images/c-12.webp" alt="" style="width: 200px; height: 250px;">
+                    <h2 class="text-sm md:text-lg font-bold">Rooftop Chic</h2>
+                    <p>$39</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Letter -->
+    <section class="text-center">
+        <h1 class="text-3xl font-bold">Join our News Letter</h1>
+        <p class="text-2xl">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input
+            class="w-3/4 mt-3 p-3 border border-black rounded focus:outline-none focus:ring-2 focus:ring-blue-500"><br>
+        <div class="flex justify-center">
+            <button class="flex items-center rounded font-bold mt-3 bg-black text-white px-5 py-2">Subscribe<svg
+                    xmlns="http://www.w3.org/2000/svg" class="font-bold h-5 w-5" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg></button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-gray-800 text-white p-10 mt-7">
+        <h1 class="text-4xl font-bold mb-2">Nostra</h1>
+        <p class="text-2xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those
+            interest</p>
+        <div class="mt-3 flex gap-5 text-2xl">
+            <i class="fa-brands fa-instagram" style="color: #e0e2e4;"></i>
+            <i class="fa-brands fa-twitter" style="color: white;"></i>
+            <i class="fa-brands fa-facebook" style="color: white;"></i>
+        </div>
+        <p class="mt-3 text-2xl mb-10">@2024 Nostra.com</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
